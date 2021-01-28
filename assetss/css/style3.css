@@ -7,11 +7,12 @@
 body{
     padding:  30px 30px 30px;
     background: url(../imajes/1.jpg) center no-repeat fixed;
-    
+     margin: 0 auto;
     /*Изменяет ширину картинки*/
     background-size: cover;
     width: 1440px;
-    
+ 
+  
 }
 
 .block{
