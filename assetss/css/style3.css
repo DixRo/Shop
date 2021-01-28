@@ -10,12 +10,14 @@ body{
     
     /*Изменяет ширину картинки*/
     background-size: cover;
+    width: 1440px;
     
 }
 
 .block{
 
 background: url('../imajes/1.jpg') 0 0 no-repeat local;
+    
     
 }
 
@@ -146,6 +148,7 @@ border-radius: 4px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    
 }
 
 
