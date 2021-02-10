@@ -1,0 +1,379 @@
+/*  Общий CSS  */
+
+
+
+
+body{
+    background: #fff;
+ width: 1526px;
+      margin: 0 auto;
+}
+
+.wrapper{
+     width: 1100px;
+    margin: 0 auto;
+}
+
+
+
+/* Раздел заголовка  */
+
+
+
+
+header{
+ display: flex;
+ justify-content: space-between;
+ padding: 10px;
+ background: #689CD2;
+ color: #fff;
+ font-family: "Comic Sans MS";
+ justify-content: center;
+}
+
+
+
+
+/*Основоное меню*/
+
+
+
+
+.dws-menu *{
+ margin: 0;
+ padding: 0;
+}
+.dws-menu ul,
+.dws-menu ol{
+ list-style: none;
+}
+
+.dws-menu > ul{
+ display: flex;
+ justify-content: center;
+}
+
+.dws-menu > ul li a{
+ display: block;
+ padding: 15px 30px 15px 40px;
+ font-size: 14px;
+ color: #fff;
+ text-decoration: none;
+ text-transform:uppercase;
+ transition: all 0.3s ease;
+}
+
+
+
+.dws-menu li a:hover{
+background-color: #006400;
+border-radius: 4px;
+ color: #ffffff;
+ box-shadow: 1px 5px 10px -5px black;
+ transition: all 0.3s ease;
+}
+
+
+
+
+/*Второстепенное меню*/
+
+
+
+
+.dws-menu li ul{
+ position: absolute;
+ min-width: 150px;
+ display: none;
+}
+
+.dws-menu li > ul li{
+ border: 1px solid #c7c8ca;
+}
+
+.dws-menu li > ul li a{
+ padding: 10px;
+ text-transform: none;
+ background: #D2691E;
+}
+
+.dws-menu li > ul li ul{
+ position: absolute;
+ right: -150px;
+ top: 0;
+}
+
+.dws-menu li:hover > ul{
+ display: block;
+}
+
+
+
+
+
+
+/*Стрелка вверх*/
+
+
+
+
+.arrowUp {
+  position: fixed;
+  bottom: 5%;
+  right: 3%;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(130deg, #FFD700 50%, #398a99 50%);
+  -webkit-background-size: 300%;
+  background-size: 300%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 50px;
+  border-radius: 5px;
+  transition: .5s;
+    
+}
+
+.arrowUp:hover {
+  background-position: 100% 0;
+}
+
+
+
+
+/*Ползунок*/
+
+
+
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+
+::-webkit-scrollbar{
+    background: #689CD2;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #FFD700;
+    border-radius: 8px;
+}
+
+
+
+
+/*  Разделы  */
+
+
+
+
+.hero{
+ 
+    height: 800px;
+    position: relative;
+    background: url('../img/hero.jpg') no-repeat bottom center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+.hero .caption{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    margin-top: -105px;
+}
+
+.hero .caption h2{
+    color: #fff;
+    font-family: "P22 Corinthia";
+    font-size: 200px;
+    font-weight: lighter;
+    margin: 0;
+    position: relative;
+    display: block;
+}
+
+
+
+
+
+
+
+/*Текст*/
+
+
+.grid-title{
+   
+    color: #FFFFFF;
+}
+
+h1{
+    margin: 0;
+    text-align: center;
+}
+
+
+h3{
+  margin: 15px;
+    font-family: "Comic Sans MS", sans-serif;
+   font-size: 15px;
+    color: #514d4d;
+    text-align: center;
+    
+}
+
+h4{
+  margin: 15px;
+    font-family: "Comic Sans MS", sans-serif;
+   font-size: 15px;
+    color: #514d4d;
+    text-align: center;
+    
+}
+
+
+
+li{
+     margin-top: 10px;
+    font-family: "Comic Sans MS", sans-serif;
+   font-size: 15px;
+    color: #514d4d;
+    
+     
+}
+
+
+
+
+/*  Раздел товаров  */
+
+
+
+
+.listings{
+    padding: 100px 0;
+}
+
+.listings ul.properties_list{
+    list-style: none;
+    overflow: hidden;
+}
+
+.listings ul.properties_list li{
+    display: block;
+    width: 340px;
+    height: auto;
+    position: relative;
+    float: left;
+    margin: 0 40px 40px 0;
+}
+
+.listings ul.properties_list li img.property_img{
+    width: 100%;
+    height: auto!important;
+    vertical-align: top;
+}
+
+
+.listings ul.properties_list li .price{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 15px 20px;
+    background: #ffffff;
+    color: #514d4d;
+    font-family: "lato-bold, sans-serif";
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+
+
+.listings ul.properties_list li:nth-child(3n+0){
+    margin-right: 0;
+}
+
+.listings ul li .property_details{
+    width: 294px;
+    padding: 10px 20px 14px 20px;
+    border-bottom: 3px solid #f2f1f1;
+    border-left: 3px solid #f2f1f1;
+    border-right: 3px solid #f2f1f1;
+
+    transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -o-transition: all .2s linear;
+}
+
+.listings ul li:hover .property_details{
+    border-bottom: 3px solid #95badf;
+    border-left: 3px solid #95badf;
+    border-right: 3px solid #95badf;
+}
+
+.listings ul li .property_details h1{
+    color: #666464;
+    font-family: "lato-bold, sans-serif";
+    font-size: 16px!important;
+    font-weight: bold;
+    margin-bottom: 5px;
+    line-height: 28px;
+}
+
+.listings ul li .property_details h1 a{
+    text-decoration: none;
+    color: #666464;
+}
+
+.listings ul li .property_details h2{
+    color: #9d9d9d;
+    font-family: "lato-regular, sans-serif";
+    font-size: 12px;
+    line-height: 26px;
+}
+
+
+
+
+/*  Подвал  */
+
+
+
+
+footer{
+    padding-top: 5px;
+    background: #95badf;
+}
+
+
+
+footer .copyrights{
+    display: block;
+    text-align: center;
+    padding: 40px 0;
+    margin-top: 60px;
+    color: #fff;
+    font-family: "Comic Sans MS, sans-serif";
+    font-size: 15px;
+    letter-spacing: 5px;
+    border-top: 1px solid #82abd4;
+}
+
+footer .copyrights a.ph_link{
+    font-family: "Comic Sans MS, sans-serif";
+    font-weight: bold;
+    text-decoration: none;
+}
